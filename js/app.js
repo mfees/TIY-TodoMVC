@@ -25,6 +25,11 @@
         $(this).parent().parent().remove();
         var lengthOfToDo = $('#todo-list li').length;
         $('#todo-count strong').text(lengthOfToDo);
+        
+        if ($(".toggle").attr('checked', true)) {
+            $('li').addClass('completed');
+        }
+        
         }); 
             
         });
