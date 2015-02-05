@@ -18,7 +18,7 @@
 //    } else {
 //        $('#footer').addClass('hidden');
 //
-//            }
+//            } // an attempt at hiding and showing the foot ver 5.0 that was a blvd of broken dreams
    
             } // if loop closer, hey girl, heyyyyy aka you need me bro!
         $(".destroy").on('click', function() {
@@ -26,9 +26,9 @@
         var lengthOfToDo = $('#todo-list li').length;
         $('#todo-count strong').text(lengthOfToDo);
         
-        if ($(".toggle").attr('checked', true)) {
-            $('li').addClass('completed');
-        }
+//        if ($(".toggle").attr('checked', true)) {
+//            $('li').addClass('completed');
+//        };   // an attempt at getting the checkboxes to apply the completed task
         
         }); 
             
