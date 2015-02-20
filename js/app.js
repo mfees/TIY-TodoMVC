@@ -1,9 +1,8 @@
-(function (window) {
-	'use strict';
-
-	// Your starting point. Enjoy the ride!
-    $(document).ready(function(){
+(function () {
+    var app = angular.module('TDMVC', [ ]);
+        app.controller('TodoController', functiion (){
         
-    })
-
-})(window);
+        this.tasks =
+        [{text: 'Buy A Unicorn'}, {text: 'Buy A Unicorn'}];
+        });
+}); ();

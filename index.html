@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="TDMVC">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/app.css">
 	</head>
 	<body>
-		<section id="todoapp">
+		<section id="todoapp" ng-controller="TodoController as todo">
 			<header id="header">
 				<h1>todos</h1>
 				<input id="new-todo" placeholder="What needs to be done?" autofocus>
@@ -21,7 +21,8 @@
 				<ul id="todo-list">
 					<!-- These are here just to show the structure of the list items -->
 					<!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
-					<li class="completed">
+					<li class="completed" ng-repeat="task in tasks">
+                        {{tasks.text}}
 						<div class="view">
 							<input class="toggle" type="checkbox" checked>
 							<label>Taste JavaScript</label>
@@ -68,6 +69,7 @@
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
 		<!-- Scripts here. Don't remove ↓ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="node_modules/todomvc-common/base.js"></script>
 		<script src="js/app.js"></script>
