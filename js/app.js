@@ -1,64 +1,26 @@
-(function(window){
-    var app = angular.module("TodoMVC", [ ]);
-    
-    app.controller("TodoController", function(){
-        this.items = tasks;
-        this.addItem = function(){
-            console.log("banana");
-        }
-    });
+(function (window) {
 
     
-    var tasks = [
-        {text: "Task number 1"},
-        {text: "buttsex"}
-    ];
+var app = angular.module('TodoMVC', [ ]);
 
+app.controller('TodoController', function(){
+   
+    this.items = tasks;
+    this.addItem = function(){
+	        this.items.push({text: this.todotext});
+	        console.log("codebone");
+	    };
+});               
+
+app.directive();
+
+var tasks = [
+    { text: "learn angular"},
+    { text: "buy a pony" },
+    { text: "another engaging task" }
+];
+    
+    
+    
 })(window);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//(function (window) {
-//
-//    
-//var app = angular.module('Todomvc', [ ]);
-//
-//app.controller('TaskController', function(){
-//   
-//    this.items = tasks;
-//    this.addItem = function(){
-//	        this.items.push({text: this.todotext});
-//	        console.log("codebone");
-//	    };
-//});               
-//
-//app.directive();
-//
-//var tasks = [
-//    { text: "learn angular"},
-//    { text: "buy a pony" },
-//    { text: "another engaging task" }
-//];
-//    
-//    
-//    
-//})(window);
-//
