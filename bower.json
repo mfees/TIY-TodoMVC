@@ -1,0 +1,21 @@
+{
+  "name": "TIY-TodoMVC",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mfees/TIY-TodoMVC",
+  "authors": [
+    "Evan Klemen <ejklemen@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13"
+  }
+}
