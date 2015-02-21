@@ -3,7 +3,9 @@
     
     app.controller("TodoController", function(){
         this.items = tasks;
-        
+        this.addItem = function(){
+            console.log("banana");
+        }
     });
 
     
