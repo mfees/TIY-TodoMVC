@@ -7,7 +7,7 @@ app.controller('TodoController', function(){
    
     this.items = tasks;
     this.addItem = function(){
-	        this.items.push({text: this.todotext});
+	        this.items.push({text: this.newItem});
 	        console.log("codebone");
 	    };
 });               
