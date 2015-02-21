@@ -1,16 +1,18 @@
 (function(window){
-    var app = angular.module("TodoMVC", [])
+    var app = angular.module("TodoMVC", [ ]);
     
     app.controller("TodoController", function(){
         this.items = tasks;
+        
     });
+
     
     var tasks = [
         {text: "Task number 1"},
         {text: "buttsex"}
     ];
 
-});
+})(window);
 
 
 
