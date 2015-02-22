@@ -38,7 +38,8 @@
 			<!-- This footer should hidden by default and shown when there are todos -->
 			<footer id="footer">
 				<!-- This should be `0 items left` by default -->
-				<span id="todo-count"><strong>{{todo.itemCount(item)}}</strong> item left</span>
+				<span id="todo-count"><strong><span ng-repeat='item in doneItems = 
+				(todo.items | filter:item.done==true)'></span>{{doneItems.length}}</strong> item left</span>
 				<!-- Remove this if you don't implement routing -->
 				<ul id="filters">
 					<li>

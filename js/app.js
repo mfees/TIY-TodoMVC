@@ -28,8 +28,8 @@ app.controller('TodoController', function(){
 
 
 var tasks = [
-    { text: "learn angular", done: true},
-    { text: "buy a pony", done: true},
+    { text: "learn angular", done: false},
+    { text: "buy a pony", done: false},
     { text: "another engaging task", done: false}
 ];
         
