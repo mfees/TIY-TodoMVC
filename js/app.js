@@ -12,7 +12,8 @@ app.controller('TodoController', function(){
     this.removeTodo = function(item){
         this.items.splice(this.items.indexOf(item),1);
     };
-    
+   
+   this.clearAll	
     
 //    this.clear = function(){
 //      var oldTodos = this.items;
