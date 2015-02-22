@@ -14,11 +14,12 @@ app.controller('TodoController', function(){
     };
    
    this.clearAll = function() {
-  		angular.forEach(this.items, function(value, key){
+  		angular.forEach(tasks, function(value, key){
 		if(value.done === true){
-		tasks.splice(tasks[key], 1);
+			tasks.splice(tasks[key], 1);
+			console.log(tasks[key]);	
 		}
-		console.log(tasks);	
+		console.log(value.done);	
 		});
    
    };
