@@ -9,6 +9,7 @@ app.controller('TodoController', function(){
     var newItem;
     this.addItem = function(newItem){
 	        this.items.push({text: this.newItem});
+            this.newItem = '';
 	    };
 });               
 
