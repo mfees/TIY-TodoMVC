@@ -13,8 +13,22 @@ app.controller('TodoController', function(){
         this.items.splice(this.items.indexOf(item),1);
     };
    
-   this.clearAll	
+   this.clearAll = function() {
+  		angular.forEach(this.items, function(value, key){
+		console.log(value.done);
+		// console.log(key);	
+		});
+   
+   };
     
+   // this.counting = function() { 
+  //		angular.forEach(this.items, function(value){
+//		console.log(value);	
+		//	return value.length;
+//	});
+ //  };    
+
+
 //    this.clear = function(){
 //      var oldTodos = this.items;
 //        this.items = [];
