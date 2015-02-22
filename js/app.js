@@ -15,8 +15,10 @@ app.controller('TodoController', function(){
    
    this.clearAll = function() {
   		angular.forEach(this.items, function(value, key){
-		console.log(value.done);
-		// console.log(key);	
+		if(value.done === true){
+		tasks.splice(tasks[key], 1);
+		}
+		console.log(tasks);	
 		});
    
    };
