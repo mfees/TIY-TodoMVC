@@ -1,14 +1,14 @@
 (function (window) {
 
     
-var app = angular.module('Todomvc', [ ]);
+var app = angular.module('TodoMVC', [ ]);
 
-app.controller('TaskController', function(){
+app.controller('TodoController', function(){
    
     this.items = tasks;
-    this.addItem = function(){
-	        this.items.push({text: this.todotext, done:false});
-	        console.log("codebone");
+    var newItem;
+    this.addItem = function(newItem){
+	        this.items.push({text: this.newItem});
 	    };
 });               
 
@@ -16,10 +16,7 @@ app.controller('TaskController', function(){
 var tasks = [
     { text: "learn angular"},
     { text: "buy a pony" },
-    { text: "another engaging task" },
-    { text: "getting things done" }
+    { text: "another engaging task" }
 ];
-    
-    
-    
+        
 })(window);
