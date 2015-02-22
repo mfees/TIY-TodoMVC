@@ -13,16 +13,18 @@ app.controller('TodoController', function(){
         this.items.splice(this.items.indexOf(item),1);
     };
    
-   this.clearAll = function() {
-  		angular.forEach(tasks, function(value, key){
-		if(value.done === true){
-			tasks.splice(tasks[key], 1);
-			console.log(tasks[key]);	
-		}
-		console.log(value.done);	
-		});
-   
-   };
+    this.clearAll = function() {
+		var oldList = this.items;
+		console.log(oldList);	
+  		this.items = [];	 
+  		console.log(this.items); 
+//			angular.forEach(oldList, function(item, items){
+//			console.log(item);	
+//			console.log(item.done);
+//			console.log(this.items);	
+//			if(item.done === false) this.items.push(item);	
+//		});	
+	};
     
    // this.counting = function() { 
   //		angular.forEach(this.items, function(value){
