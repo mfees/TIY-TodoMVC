@@ -9,13 +9,13 @@ app.controller('TodoController', function(){
             this.newItem = '';
 	    };
     
-    this.remove = function(item){
-        this.items.splice(this.items.indexOf(item), 1);
+    this.removeTodo = function(item){
+        this.items.splice(this.items.indexOf(item),1);
     };
     
-    this.itemCount = function(item){
-        if(item.done) this.items.length;
-    }
+//    this.itemCount = function(item){
+//        if(item.done) this.items.length;
+//    } supposed to count only undone items
     
 //    this.clear = function(){
 //      var oldTodos = this.items;
