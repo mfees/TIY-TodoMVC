@@ -12,8 +12,8 @@
 		<section ng-controller="TodoController as todo" id="todoapp">
 			<header id="header">
 				<h1>todos</h1>
-                <form ng-submit="todo.addItem()">
-				    <input ng-model="newItem" id="new-todo" placeholder="What needs to be done?" autofocus>
+                <form name="myForm" ng-submit="todo.addItem()">
+				    <input name="input" ng-model="todo.newItem" id="new-todo" placeholder="What needs to be done?" autofocus>
 <!--                    <input type="submit" id="smallButton" />-->
                 </form>    
 			</header>
