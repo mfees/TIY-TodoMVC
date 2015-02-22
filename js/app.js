@@ -14,7 +14,7 @@ app.controller('TodoController', function(){
     };
     
     this.itemCount = function(item){
-        if(!item.done) this.items.length;
+        if(item.done) this.items.length;
     }
     
 //    this.clear = function(){
