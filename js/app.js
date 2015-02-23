@@ -12,8 +12,28 @@ app.controller('TodoController', function(){
     this.removeTodo = function(item){
         this.items.splice(this.items.indexOf(item),1);
     };
+   
+    this.clearAll = function() {
+		var oldList = this.items;
+		console.log(oldList);	
+  		this.items = [];	 
+  		console.log(this.items); 
+//			angular.forEach(oldList, function(item, items){
+//			console.log(item);	
+//			console.log(item.done);
+//			console.log(this.items);	
+//			if(item.done === false) this.items.push(item);	
+//		});	
+	};
     
-    
+   // this.counting = function() { 
+  //		angular.forEach(this.items, function(value){
+//		console.log(value);	
+		//	return value.length;
+//	});
+ //  };    
+
+
 //    this.clear = function(){
 //      var oldTodos = this.items;
 //        this.items = [];

@@ -39,7 +39,8 @@
 			<footer id="footer">
 				<!-- This should be `0 items left` by default -->
 				<span id="todo-count"><strong><span ng-repeat='item in doneItems = 
-				(todo.items | filter:item.done==true)'></span>{{doneItems.length}}</strong> item left</span>
+				(todo.items | filter:item.done==true)'></span>
+				{{doneItems.length}}{{todo.counting()}}</strong> item left</span>
 				<!-- Remove this if you don't implement routing -->
 				<ul id="filters">
 					<li>
@@ -53,7 +54,7 @@
 					</li>
 				</ul>
 				<!-- Hidden if no completed items are left ↓ -->
-				<button ng-click="todo.clear()" id="clear-completed"></button>
+				<button ng-click="todo.clearAll()" id="clear-completed"></button>
 			</footer>
 		</section>
 		<footer id="info">
